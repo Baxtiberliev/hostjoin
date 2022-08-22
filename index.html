@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Chat Bot</title>
+        <style type="text/css" media="all">
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Sans-Serif;
+}
+body{
+    width: 980px;
+    height: 1338px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+button{
+    margin: 20px 0px;
+    width: 500px;
+    height: 200px;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    background: green;
+    border-radius: 50px;
+    box-shadow: 0px 5px 30px black;
+}
+button:nth-child(2){
+    background: blue;
+}
+        </style>
+    </head>
+    <body>
+        <button type="submit" id="btnHost">Host</button>
+        <button type="submit" id="btnJoin">Join</button>
+        
+        
+        <script type="text/javascript" charset="utf-8">
+btnHost.onclick = function () {
+    document.location.href = "host.html"
+}
+btnJoin.onclick = function () {
+    document.location.href = "join.html"
+}
+        </script>
+    </body>
+</html>
